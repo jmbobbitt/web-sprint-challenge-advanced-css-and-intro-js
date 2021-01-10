@@ -245,9 +245,25 @@ Use get20s to do the following:
 Example born in 1901 and died in 1959 - included -- born in 1889 and died in 1925 not included
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(/*Your Code Here*/){
-  /*Your Code Here*/
-}
+function get20s(arrayOfArtists){
+  /*Your Code Here*/	  let newArrayOfArtists = [];
+  // We iterate over every artist in our array of artists
+  for (let i = 0; i < arrayOfArtists.length; i++){
+    // Current artist we are iterating over...
+    const artist = arrayOfArtists[i];
+    // Find the artist's birth/death year from artist's "years" property
+    const artistBirthYear = parseInt(artist.years.substring(0, 4)); // years": "1541 - 1614",
+    const artistDeathYear = parseInt(artist.years.substring(7));
+
+    if (artistBirthYear > 1901 && artistDeathYear < 2000){
+      newArrayOfArtists.push(arrayOfArtists[i].name);
+    } 
+
+  } 
+  return newArrayOfArtists;
+}	
+
+console.log(get20s(artists));
 
 
 
