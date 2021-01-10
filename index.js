@@ -298,11 +298,20 @@ Use addArtist to do the following:
 3. Return the resulting array
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
+const newArtist = {
+  id: 20,
+  name: 'Jenni Bobbitt', 
+  years: '1991 - current day',
+  genre: 'Web Developer', 
+  nationality: 'North American',
+  bio: 'Spent 10 years learning how to teach. Spent 5 years teaching English as a contract ESL teacher for Vipkid. Coding is brand new to me.',
+}
 
-function addArtist(/*Your Code Here*/){
-    /*Your Code Here*/
-  }
-
+function addArtist(array){
+return array.push(newArtist);
+}
+console.log(addArtist(artists));
+console.log(artists);
   
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
