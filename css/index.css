@@ -136,9 +136,41 @@ button:hover{
 }
 
 @media (max-width: 500px){
-    .artists-container {
-        display: flex;
-        flex-direction: columns;
-        justify-content: center;
+    h1{
+        font-size:5rem;
+
+    }  
+    /*HEADER*/
+    nav{
+        width:65%;
+    }
+
+    /*TITLE CONTAINER*/
+
+    .title-container div {	
+
+        width:100%;
+
+    }
+    .title-container hr{
+        width:100%;
+    }
+
+    /*Artists Section Styles */
+    .artists-container{
+
+        flex-direction: column;
+        padding-left: 50px;
+        width:100%;
+        margin:0 auto;
+    }
+
+    .artist{
+
+        width:80%;
+
+    }
+    .artist img{
+        width:100%;
     }
 }
